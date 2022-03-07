@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1300
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTLWINNhom12.1", "BTLWINNhom12\BTLWINNhom12.1.csproj", "{68299A97-921D-4208-A00B-20FF00EFBF8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68299A97-921D-4208-A00B-20FF00EFBF8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68299A97-921D-4208-A00B-20FF00EFBF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68299A97-921D-4208-A00B-20FF00EFBF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68299A97-921D-4208-A00B-20FF00EFBF8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {776747DA-CA17-4A03-86C8-C40AC69074FF}
+	EndGlobalSection
+EndGlobal

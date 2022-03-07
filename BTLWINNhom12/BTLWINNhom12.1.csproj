@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68299A97-921D-4208-A00B-20FF00EFBF8D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BTLWINNhom12</RootNamespace>
+    <AssemblyName>BTLWINNhom12</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1427.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBMT.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBMT.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="HomeGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeGUI.Designer.cs">
+      <DependentUpon>HomeGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KHGUI\KhachHangEditGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KHGUI\KhachHangEditGUI.Designer.cs">
+      <DependentUpon>KhachHangEditGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KHGUI\KhahHangGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KHGUI\KhahHangGUI.Designer.cs">
+      <DependentUpon>KhahHangGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSPGUI\LoaiSPGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSPGUI\LoaiSPGUI.Designer.cs">
+      <DependentUpon>LoaiSPGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LSPGUI\SuaLoaiSPGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LSPGUI\SuaLoaiSPGUI.Designer.cs">
+      <DependentUpon>SuaLoaiSPGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.Designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCCGUI\NCCGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCCGUI\NCCGUI.Designer.cs">
+      <DependentUpon>NCCGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCCGUI\SuaNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCCGUI\SuaNCC.Designer.cs">
+      <DependentUpon>SuaNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NGUI\ChiTietPNGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NGUI\ChiTietPNGUI.Designer.cs">
+      <DependentUpon>ChiTietPNGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NGUI\PhieuNhapGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NGUI\PhieuNhapGUI.Designer.cs">
+      <DependentUpon>PhieuNhapGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NGUI\QLPhieuNhapGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NGUI\QLPhieuNhapGUI.Designer.cs">
+      <DependentUpon>QLPhieuNhapGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NVGUI\NhanvienEditGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NVGUI\NhanvienEditGUI.Designer.cs">
+      <DependentUpon>NhanvienEditGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NVGUI\NhanvienGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NVGUI\NhanvienGUI.Designer.cs">
+      <DependentUpon>NhanvienGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SPGUI\SanPhamGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPGUI\SanPhamGUI.Designer.cs">
+      <DependentUpon>SanPhamGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SPGUI\SuaSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SPGUI\SuaSP.Designer.cs">
+      <DependentUpon>SuaSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TKGUI\TaikhoanEditGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TKGUI\TaikhoanEditGUI.Designer.cs">
+      <DependentUpon>TaikhoanEditGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TKGUI\TaikhoanGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TKGUI\TaikhoanGUI.Designer.cs">
+      <DependentUpon>TaikhoanGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XGUI\ChitietXuatGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XGUI\ChitietXuatGUI.Designer.cs">
+      <DependentUpon>ChitietXuatGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XGUI\FormXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XGUI\FormXuat.Designer.cs">
+      <DependentUpon>FormXuat.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="HomeGUI.resx">
+      <DependentUpon>HomeGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KHGUI\KhachHangEditGUI.resx">
+      <DependentUpon>KhachHangEditGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KHGUI\KhahHangGUI.resx">
+      <DependentUpon>KhahHangGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSPGUI\LoaiSPGUI.resx">
+      <DependentUpon>LoaiSPGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LSPGUI\SuaLoaiSPGUI.resx">
+      <DependentUpon>SuaLoaiSPGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCCGUI\NCCGUI.resx">
+      <DependentUpon>NCCGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCCGUI\SuaNCC.resx">
+      <DependentUpon>SuaNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NGUI\ChiTietPNGUI.resx">
+      <DependentUpon>ChiTietPNGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NGUI\PhieuNhapGUI.resx">
+      <DependentUpon>PhieuNhapGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NGUI\QLPhieuNhapGUI.resx">
+      <DependentUpon>QLPhieuNhapGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NVGUI\NhanvienEditGUI.resx">
+      <DependentUpon>NhanvienEditGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NVGUI\NhanvienGUI.resx">
+      <DependentUpon>NhanvienGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SPGUI\SanPhamGUI.resx">
+      <DependentUpon>SanPhamGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SPGUI\SuaSP.resx">
+      <DependentUpon>SuaSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TKGUI\TaikhoanEditGUI.resx">
+      <DependentUpon>TaikhoanEditGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TKGUI\TaikhoanGUI.resx">
+      <DependentUpon>TaikhoanGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XGUI\ChitietXuatGUI.resx">
+      <DependentUpon>ChitietXuatGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XGUI\FormXuat.resx">
+      <DependentUpon>FormXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataBMT.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataBMT.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataBMT.dbml.layout">
+      <DependentUpon>DataBMT.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\BTLWINNhom12.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\ChiTietBan.datasource" />
+    <None Include="Properties\DataSources\ChiTietNhap.datasource" />
+    <None Include="Properties\DataSources\DataBMTDataContext.datasource" />
+    <None Include="Properties\DataSources\HoaDonBan.datasource" />
+    <None Include="Properties\DataSources\HoaDonNhap.datasource" />
+    <None Include="Properties\DataSources\HomeGUI.datasource" />
+    <None Include="Properties\DataSources\KhachHang.datasource" />
+    <None Include="Properties\DataSources\KhachHangEditGUI.datasource" />
+    <None Include="Properties\DataSources\KhahHangGUI.datasource" />
+    <None Include="Properties\DataSources\LoaiSP.datasource" />
+    <None Include="Properties\DataSources\LogInForm.datasource" />
+    <None Include="Properties\DataSources\NhaCungCap.datasource" />
+    <None Include="Properties\DataSources\NhanVien.datasource" />
+    <None Include="Properties\DataSources\NhanvienEditGUI.datasource" />
+    <None Include="Properties\DataSources\NhanvienGUI.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\SanPham.datasource" />
+    <None Include="Properties\DataSources\TaiKhoan.datasource" />
+    <None Include="Properties\DataSources\TrinhDo.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
